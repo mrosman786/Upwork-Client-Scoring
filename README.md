@@ -83,6 +83,10 @@ You can **adjust the weight** given to each of these factors in the extension se
 
 ---
 
+## LICENSE
+
+This project is licensed under the **MIT License with Attribution and No Renaming Clause** — see the [LICENSE](./LICENSE) file for details.
+
 ## 📬 Feedback
 
 Found a bug or have a suggestion?  
