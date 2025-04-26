@@ -1,6 +1,6 @@
 # Upwork Client Scoring Extension
 
-![Upwork_JOB_client_scoring_example](job_client_scoring_Example.png.png)
+![Upwork_JOB_client_scoring_example](job_client_scoring_Example.png)
 
 Boost your Upwork freelancing strategy by instantly evaluating client quality directly in your browser!  
 This extension automatically analyses client profiles and job postings to give you a **quick, customizable score** — so you can focus on the best opportunities.
