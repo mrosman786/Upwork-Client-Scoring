@@ -3,6 +3,7 @@
   "name": "Upwork Client Scoring",
   "version": "0.1.0",
   "description": "Analyze Upwork clients to determine if it's worth applying to their jobs",
+  "author": "Muhammad Osman",
   "permissions": [
     "storage",
     "scripting",
