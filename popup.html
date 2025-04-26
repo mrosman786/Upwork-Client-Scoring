@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upwork Client Scoring Settings</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upwork Client Scoring</h1>
+        
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="extensionToggle" checked>
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-label">Enable Extension</span>
+        </div>
+
+        <div class="settings-section">
+            <h2>Weight Settings</h2>
+            <div class="setting-item">
+                <label for="hiringRate">Hiring Rate:</label>
+                <input type="number" id="hiringRate" min="0" max="100">
+            </div>
+            <div class="setting-item">
+                <label for="paymentVerified">Payment Verified:</label>
+                <input type="number" id="paymentVerified" min="0" max="100">
+            </div>
+            <div class="setting-item">
+                <label for="lastSeen">Last Seen:</label>
+                <input type="number" id="lastSeen" min="0" max="100">
+            </div>
+            <div class="setting-item">
+                <label for="totalJobs">Total Jobs:</label>
+                <input type="number" id="totalJobs" min="0" max="100">
+            </div>
+            <div class="setting-item">
+                <label for="totalSpending">Total Spending:</label>
+                <input type="number" id="totalSpending" min="0" max="100">
+            </div>
+            <div id="weightsSumDisplay" class="weights-sum">Total: 100%</div>
+        </div>
+
+        <div class="settings-section">
+            <h2>Threshold Settings</h2>
+            <div class="setting-item">
+                <label for="goodThreshold">Good Score Threshold:</label>
+                <input type="number" id="goodThreshold" min="0" max="100">
+            </div>
+            <div class="setting-item">
+                <label for="averageThreshold">Average Score Threshold:</label>
+                <input type="number" id="averageThreshold" min="0" max="100">
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="saveSettings" class="primary-button">Save Settings</button>
+            <button id="resetSettings" class="secondary-button">Reset to Default</button>
+        </div>
+        <div id="successMessage" class="success-message">Settings saved successfully!</div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

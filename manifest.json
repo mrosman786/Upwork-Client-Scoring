@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "Upwork Client Scoring",
+  "version": "0.1.0",
+  "description": "Analyze Upwork clients to determine if it's worth applying to their jobs",
+  "permissions": [
+    "storage",
+    "scripting",
+    "webRequest",
+     "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.upwork.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.upwork.com/jobs/*",
+        "https://*.upwork.com/nx/jobs/*"
+      ],
+      "js": [
+        "content-scripts/job-page.js",
+        "content-scripts/utils.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://*.upwork.com/search/*",
+        "https://*.upwork.com/nx/find-work/*",
+        "https://*.upwork.com/find-work/*"
+      ],
+      "js": [
+        "content-scripts/search-page.js",
+        "content-scripts/utils.js"
+      ]
+    }
+  ]
+}
